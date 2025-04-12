@@ -1,87 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-  Social Media Dashboard
-  Total Followers: 23,004
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link rel="stylesheet" href="./dist/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__title">
+        <h1>Social Media Dashboard</h1>
+        <p>Total Followers: 23,004</p>
+      </div>
+      <div class="header__toggle-btn">
+        <!-- Theme toggle using <input type="checkbox"> -->
+      </div>
+    </header>
 
-  Dark Mode
+    <main>
+      <section class="followers grid">
+        <div class="followers__card grid__card">
+          <div class="flex">
+            <img
+              src="./images/icon-facebook.svg"
+              alt="facebook icon"
+              class="social-icon"
+            />
+            <p>@nathanf</p>
+          </div>
+          <div>
+            <h3>1987</h3>
+            <p class="followers__text">followers</p>
+          </div>
+          <div class="flex">
+            <img
+              src="./images/icon-up.svg"
+              alt="icon up icon"
+              class="up-icon"
+            />
+            <p class="followers__up">12 Today</p>
+          </div>
+        </div>
 
-  
+        <div class="followers__card grid__card">
+          <div class="flex">
+            <img
+              src="./images/icon-twitter.svg"
+              alt="twitter icon"
+              class="social-icon"
+            />
+            <p>@nathanf</p>
+          </div>
+          <div>
+            <h3>1044</h3>
+            <p class="followers__text">followers</p>
+          </div>
+          <div class="flex">
+            <img
+              src="./images/icon-up.svg"
+              alt="icon up icon"
+              class="up-icon"
+            />
+            <p class="followers__up">99 Today</p>
+          </div>
+        </div>
 
-  @nathanf
-  1987
-  Followers
-  12 Today
+        <div class="followers__card grid__card">
+          <div class="flex">
+            <img
+              src="./images/icon-instagram.svg"
+              alt="instagram icon"
+              class="social-icon"
+            />
+            <p>@realnathanf</p>
+          </div>
+          <div>
+            <h3>11k</h3>
+            <p class="followers__text">followers</p>
+          </div>
+          <div class="flex">
+            <img
+              src="./images/icon-up.svg"
+              alt="icon up icon"
+              class="up-icon"
+            />
+            <p class="followers__up">1099 Today</p>
+          </div>
+        </div>
 
-  @nathanf
-  1044
-  Followers
-  99 Today
+        <div class="followers__card grid__card">
+          <div class="flex">
+            <img
+              src="./images/icon-youtube.svg"
+              alt="youtube icon"
+              class="social-icon"
+            />
+            <p>Nathan F.</p>
+          </div>
+          <div>
+            <h3>8239</h3>
+            <p class="followers__text">subscribers</p>
+          </div>
+          <div class="flex">
+            <img
+              src="./images/icon-down.svg"
+              alt="icon up icon"
+              class="up-icon"
+            />
+            <p class="followers__down">144 Today</p>
+          </div>
+        </div>
+      </section>
+      <h2>Overview - Today</h2>
+      <section class="overview grid">
+        <div class="overview__card grid__card">
+          <div class="flex">
+            <p>Page Views</p>
+            <img
+              src="./images/icon-facebook.svg"
+              alt="facebook icon"
+              class="social-icon"
+            />
+          </div>
+          <div class="flex">
+            <h4>87</h4>
+            <div class="followers-flex">
+              <img
+                src="./images/icon-up.svg"
+                alt="icon up icon"
+                class="up-icon"
+              />
+              <p class="followers__up">3%</p>
+            </div>
+          </div>
+        </div>
 
-  @realnathanf
-  11k
-  Followers
-  1099 Today
+        <div class="overview__card grid__card">
+          <div class="flex">
+            <p>Likes</p>
+            <img
+              src="./images/icon-facebook.svg"
+              alt="facebook icon"
+              class="social-icon"
+            />
+          </div>
+          <div class="flex">
+            <h4>52</h4>
+            <div class="followers-flex">
+              <img
+                src="./images/icon-down.svg"
+                alt="icon up icon"
+                class="up-icon"
+              />
+              <p class="followers__down">2%</p>
+            </div>
+          </div>
+        </div>
 
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
+        <div class="overview__card grid__card">
+          <div class="flex">
+            <p>Likes</p>
+            <img
+              src="./images/icon-instagram.svg"
+              alt="instagram icon"
+              class="social-icon"
+            />
+          </div>
+          <div class="flex">
+            <h4>5462</h4>
+            <div class="followers-flex">
+              <img
+                src="./images/icon-up.svg"
+                alt="icon up icon"
+                class="up-icon"
+              />
+              <p class="followers__up">2257%</p>
+            </div>
+          </div>
+        </div>
 
+        <div class="overview__card grid__card">
+          <div class="flex">
+            <p>Profile Views</p>
+            <img
+              src="./images/icon-instagram.svg"
+              alt="instagram icon"
+              class="social-icon"
+            />
+          </div>
+          <div class="flex">
+            <h4>52k</h4>
+            <div class="followers-flex">
+              <img
+                src="./images/icon-up.svg"
+                alt="icon up icon"
+                class="up-icon"
+              />
+              <p class="followers__up">1375%</p>
+            </div>
+          </div>
+        </div>
 
+        <div class="overview__card grid__card">
+          <div class="flex">
+            <p>Retweets</p>
+            <img
+              src="./images/icon-twitter.svg"
+              alt="twitter icon"
+              class="social-icon"
+            />
+          </div>
+          <div class="flex">
+            <h4>117</h4>
+            <div class="followers-flex">
+              <img
+                src="./images/icon-up.svg"
+                alt="icon up icon"
+                class="up-icon"
+              />
+              <p class="followers__up">303%</p>
+            </div>
+          </div>
+        </div>
 
-  Overview - Today
+        <div class="overview__card grid__card">
+          <div class="flex">
+            <p>Likes</p>
+            <img
+              src="./images/icon-twitter.svg"
+              alt="twitter icon"
+              class="social-icon"
+            />
+          </div>
+          <div class="flex">
+            <h4>507</h4>
+            <div class="followers-flex">
+              <img
+                src="./images/icon-up.svg"
+                alt="icon up icon"
+                class="up-icon"
+              />
+              <p class="followers__up">553%</p>
+            </div>
+          </div>
+        </div>
 
-  Page Views
-  87
-  3%
+        <div class="overview__card grid__card">
+          <div class="flex">
+            <p>Likes</p>
+            <img
+              src="./images/icon-youtube.svg"
+              alt="youtube icon"
+              class="social-icon"
+            />
+          </div>
+          <div class="flex">
+            <h4>107</h4>
+            <div class="followers-flex">
+              <img
+                src="./images/icon-down.svg"
+                alt="icon up icon"
+                class="up-icon"
+              />
+              <p class="followers__down">19%</p>
+            </div>
+          </div>
+        </div>
 
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <div class="overview__card grid__card">
+          <div class="flex">
+            <p>Total Views</p>
+            <img
+              src="./images/icon-youtube.svg"
+              alt="youtube icon"
+              class="social-icon"
+            />
+          </div>
+          <div class="flex">
+            <h4>1407</h4>
+            <div class="followers-flex">
+              <img
+                src="./images/icon-down.svg"
+                alt="icon up icon"
+                class="up-icon"
+              />
+              <p class="followers__down">12%</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

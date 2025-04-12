@@ -1,0 +1,22 @@
+@use "../util/functions" as f;
+
+a,
+a:visited,
+a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h4 {
+  font-size: f.rem(25);
+}
+
+h3 {
+  font-size: f.rem(43);
+}
+
+p {
+  font-size: f.rem(16);
+}
