@@ -1,3 +1,6 @@
+@use "../util/functions" as f;
+@use "../util/breakpoints" as u;
+
 html {
   box-sizing: border-box;
   font-size: 100%;
@@ -11,7 +14,37 @@ html {
   padding: 0;
 }
 
-body {
-  font-family: var(--ff-primary);
-  color: var(--clr-text-300);
+img {
+  max-width: 100%;
+  display: block;
 }
+
+body {
+  font-size: 1rem;
+  display: grid;
+  place-items: center;
+  gap: 2rem;
+  background-color: var(--clr-background);
+  font-family: var(--ff-primary);
+  color: var(--clr-text2);
+  min-height: 100vh;
+  width: 100%;
+  padding: f.rem(40) f.rem(24);
+
+  @include u.breakpoint-up("desktop") {
+    padding: f.rem(40) 1rem 0 1rem;
+    grid-template-rows: max-content max-content;
+    gap: 3rem;
+    // padding: 0 1rem 0 1rem;
+  }
+}
+
+header,
+main {
+  max-width: f.em(1100);
+  width: 100%;
+}
+
+// Add background image
+// 40 x 164
+// gap 30px (column) x 24px (row)

@@ -12,3 +12,5 @@ Future ideas:
 
 - add JSON files to display data
 - add 3 button state
+
+- look how color change

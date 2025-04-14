@@ -9,14 +9,23 @@ a:focus {
 
 h1,
 h2,
-h4 {
-  font-size: f.rem(25);
+h3,
+h4,
+h5,
+h6 {
+  color: var(--clr-text1);
+  font-weight: var(--fw-bold);
 }
 
 h3 {
-  font-size: f.rem(43);
+  font-size: 3.5rem;
 }
 
-p {
-  font-size: f.rem(16);
+h4 {
+  font-size: 2rem;
+}
+
+h2 {
+  margin-block-start: f.rem(48);
+  margin-block-end: f.rem(28);
 }

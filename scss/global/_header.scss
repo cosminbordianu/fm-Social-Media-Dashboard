@@ -1,0 +1,29 @@
+@use "../util/functions" as f;
+@use "../util/breakpoints" as u;
+
+.header {
+  hr {
+    border: 1px solid var(--clr-text2);
+    margin: 1rem 0;
+  }
+
+  &__toggle-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title p {
+    font-weight: var(--fw-bold);
+  }
+
+  @include u.breakpoint-up("mobile") {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    hr {
+      display: none;
+    }
+  }
+}
