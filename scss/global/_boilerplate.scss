@@ -32,10 +32,9 @@ body {
   padding: f.rem(40) f.rem(24);
 
   @include u.breakpoint-up("desktop") {
-    padding: f.rem(40) 1rem 0 1rem;
+    padding: f.rem(40) 1rem;
     grid-template-rows: max-content max-content;
     gap: 3rem;
-    // padding: 0 1rem 0 1rem;
   }
 }
 
