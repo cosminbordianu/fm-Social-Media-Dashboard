@@ -25,7 +25,6 @@ body {
   place-items: center;
   gap: 2rem;
   background-color: var(--clr-background);
-  background-color: red;
   font-family: var(--ff-primary);
   color: var(--clr-text2);
   min-height: 100vh;
@@ -33,10 +32,9 @@ body {
   padding: f.rem(40) f.rem(24);
 
   @include u.breakpoint-up("desktop") {
-    padding: f.rem(40) 1rem 0 1rem;
+    padding: f.rem(40) 1rem;
     grid-template-rows: max-content max-content;
     gap: 3rem;
-    // padding: 0 1rem 0 1rem;
   }
 }
 

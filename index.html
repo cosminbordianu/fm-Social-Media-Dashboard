@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head >
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
@@ -22,17 +22,25 @@
 
     <title>Frontend Mentor | [Challenge Name Here]</title>
     <link rel="stylesheet" href="./dist/style.css" />
+    <script defer src="/script.js"></script>
   </head>
-  <body class="white">
+  <body>
     <header class="header">
       <div class="header__title">
         <h1>Social Media Dashboard</h1>
         <p>Total Followers: 23,004</p>
       </div>
       <hr />
-      <div class="header__toggle-btn">
-        <!-- Theme toggle using <input type="checkbox"> -->
-        <p>Dark Mode</p>
+      <div class="toggle">
+        <label for="themeToggleBtn" class="toggle__text">Dark</label>
+        <button
+          role="switch"
+          aria-checked="false"
+          id="themeToggleBtn"
+          class="toggle__btn"
+        >
+          <span class="toggle__knob"></span>
+        </button>
       </div>
     </header>
 
@@ -143,7 +151,7 @@
           </div>
           <div class="flex">
             <h4>87</h4>
-            <daiv class="flex stats">
+            <div class="flex stats">
               <img
                 src="./images/icon-up.svg"
                 alt="icon up icon"
